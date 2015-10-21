@@ -7,11 +7,12 @@ ul {
 
 .topNav {
   width: 100%;
-  background-color: gray;
+  background-color: #ededed;
   height: 40px;
   margin-bottom: 20px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  border-bottom: 1px solid #dad3d3; }
   .topNav ul {
     display: flex;
     flex-direction: row;
@@ -20,28 +21,51 @@ ul {
     margin: 0 auto; }
     .topNav ul li {
       margin: 5px; }
+  .topNav .mega-octicon {
+    font-size: 22px; }
   .topNav input {
-    width: 300px; }
+    width: 280px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    height: 20px;
+    font-size: 10px; }
+  .topNav .three {
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 4px; }
 
 .navWrap {
   display: flex;
-  width: 76%;
+  width: 70%;
   margin: 0 auto; }
 
 #leftNav {
-  margin: 0; }
+  margin: 0;
+  width: 69%; }
 
 #rightNav {
   margin: 0;
   display: flex;
-  justify-content: flex-end;
-  width: 20%; }
+  flex-direction: row-reverse;
+  width: 30%; }
+  #rightNav .octicon-chevron-down {
+    font-size: 10px; }
+  #rightNav li {
+    margin: 0;
+    padding-left: 5px; }
+  #rightNav span {
+    font-size: 14px;
+    padding: 2px;
+    margin: 0;
+    display: flex;
+    align-items: center; }
 
 #thumbnail img {
-  width: 26px; }
+  width: 16px;
+  border-radius: 2px; }
 
 #container {
-  width: 76%;
+  width: 70%;
   margin: 0 auto;
   display: flex; }
 
@@ -51,35 +75,129 @@ ul {
   display: flex;
   flex-direction: column; }
   #sectionLeft img {
+    width: 190px;
     border-radius: 7px; }
+  #sectionLeft h3 {
+    margin: 0; }
+  #sectionLeft .username {
+    font-weight: lighter;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 12px; }
+  #sectionLeft .info {
+    font-size: 12px;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 12px; }
+    #sectionLeft .info span {
+      font-size: 13px;
+      opacity: 0.4;
+      padding-right: 5px; }
+    #sectionLeft .info a {
+      text-decoration: none;
+      color: #2f4ba6; }
+    #sectionLeft .info li {
+      padding-bottom: 5px; }
+
+.disciples {
+  display: flex;
+  margin: 0;
+  color: #2f4ba6;
+  font-weight: bold;
+  justify-content: space-around;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ededed; }
+  .disciples li {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    font-size: 20px; }
+  .disciples .discWord {
+    font-size: 8px;
+    color: gray;
+    font-weight: normal; }
+
+#orgs h3 {
+  margin-top: 14px;
+  margin-bottom: 10px;
+  font-size: 13px; }
+#orgs img {
+  width: 34px; }
 
 #sectionRight {
   width: 70%;
   margin: 0 auto; }
 
 #sectionNav {
-  display: flex; }
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 10px; }
   #sectionNav ul {
     display: flex;
     width: 50%;
     justify-content: space-around; }
   #sectionNav span {
     padding-right: 5px; }
-  #sectionNav button {
-    display: flex;
-    justify-content: flex-end; }
+
+#specificNav {
+  font-size: 11px; }
+  #specificNav span {
+    font-size: 11px; }
+
+.navButton {
+  font-size: 12px;
+  font-weight: bold;
+  height: 22px;
+  width: 90px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  background-color: #ededed;
+  padding: 0; }
+  .navButton span {
+    font-size: 10px;
+    text-align: center; }
 
 #publicActivity ul {
   display: flex; }
   #publicActivity ul li {
     margin-left: 10px; }
 
+.fullRepo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
 #repoNav {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
   #repoNav ul {
     display: flex; }
     #repoNav ul li {
-      padding: 5px; }
+      padding: 2px; }
+  #repoNav input {
+    margin: 0;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    height: 24px;
+    font-size: 10px;
+    width: 200px; }
+  #repoNav button {
+    height: 28px;
+    margin: 0;
+    background-color: #ededed;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    margin-right: 20px;
+    font-size: 9px;
+    font-weight: bold; }
+  #repoNav .searchRepo {
+    font-size: 12px; }
+  #repoNav .menuRepo {
+    font-size: 10px; }
+
+.newRepo {
+  background-color: #13ba48;
+  color: white;
+  margin: 0; }
 
 .repoName li {
   display: flex;
@@ -102,6 +220,10 @@ ul {
   font-size: 20px; }
   .repoTitle a {
     text-decoration: none; }
+
+.gazerFork {
+  display: flex;
+  align-items: center; }
 
 footer {
   width: 80%;

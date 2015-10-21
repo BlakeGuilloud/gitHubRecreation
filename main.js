@@ -1,14 +1,20 @@
+/////////////////// APPENDING BASIC DATA //////////////////
+
+
 $('.profilePic').append('<img src="' + user.avatar_url + '">');
-$('.name').append(user.name);
+$('.name').append("<h3>" + user.name  + "</h3>");
 $('.username').append(user.login);
 
 $('.location').append("<span class='octicon octicon-location'></span>" + " " + user.location);
-$('.email').append("<span class='octicon octicon-mail'></span>"+ " " + user.email);
+$('.email').append("<span class='octicon octicon-mail'></span>"+ " " + "<a href = ''>" + user.email + "</a>");
 $('.joinDate').append("<span class='octicon octicon-clock'></span>" + " " + moment(user.created_at).format('MMMM Do YYYY'));
 
 $('.followers').append(user.followers);
 $('.starred').append(user.followers);
 $('.following').append(user.following);
+
+
+
 
 
 /////////////////// ON CLICK FUNCTIONS ///////////////////
@@ -30,66 +36,57 @@ $('.contribs').click(function(){
   $('#contributions').show()
 })
 
-// REPOS SORT OBJECTS IN ARRAY
 
-// var nameRepo = _.map(repos, function(item){
-//    return item.name
-// });
-// var starRepo = _.map(repos, function(item){
-//    return item.updated_at
-// });
+
+
+
+/////////////// APPENDING DATA TO REPOS / PUBLIC ACTIVITY ///////////////
 filteredActivity = "";
 var publicActivity = _.each(events, function(item){
   filteredActivity +=
-  "<ul class = ''><li class = ''>" + item.actor.login + "</li>" +
-  "<li class = ''>" + item.type + "</li>" +
-  "<li class = ''>" + item.payload.ref + "</li>" +
-  "<li class = ''>" + item.repo.name  + "</li></ul>";
+  "<ul class = ''><li class = ''>"
+  + item.actor.login
+  + "</li>"
+  + "<li class = ''>"
+  + item.type
+  + "</li>"
+  + "<li class = ''>"
+  + item.payload.ref
+  + "</li>"
+  + "<li class = ''>"
+  + item.repo.name
+  + "</li></ul>";
 });
 $('#publicActivity').append(filteredActivity)
 
 
-filteredRepos = "";
+var filteredRepos = "";
 var mainRepo = _.each(repos, function(item){
-  filteredRepos += "<ul class = 'repoNameInd'><li class = 'repoTitle'><a href = " + item.html_url +">" +
-  item.name + "</a></li>" + "<li class = 'timeUpdated'>" +
-  moment(item.updated_at).fromNow() + "</ul>" + "</li>"  +
-  "<ul class = 'gazerFork'>" + "<li class = 'starGazers'>" +
-  item.stargazers_count + "<span class='octicon octicon-git-branch'></span>" + "</li>" + "<li class = 'forks'>" +
-  item.forks_count +
-  "</li>" + "<span class='octicon octicon-star'></span>" + "<li class = 'language'>" +
-  item.language + "</li>" + "</ul>";
+  filteredRepos += "<div class = 'fullRepo'><ul class = 'repoNameInd'><li class = 'repoTitle'><a href = "
+  + item.html_url
+  + ">"
+  + item.name
+  + "</a></li>"
+  + "<li class = 'timeUpdated'>"
+  + moment(item.updated_at).fromNow()
+  + "</ul>"
+  + "</li>"
+  + "<ul class = 'gazerFork'>"
+  + "<li class = 'starGazers'>"
+  + item.stargazers_count
+  + "<span class='octicon octicon-git-branch'></span>"
+  + "</li>"
+  + "<li class = 'forks'>"
+  + item.forks_count
+  + "</li>"
+  + "<span class='octicon octicon-star'></span>"
+  + "<li class = 'language'>"
+  + item.language
+  + "</li>"
+  + "</ul>"
+  + "</div>";
 });
 
+
+
 $('.repoName').append(filteredRepos)
-
-
-//
-// var filteredRepos = repos.map(function(item){
-//   return{ name: item.name,
-//           stargazers: item.stargazers_count,
-//           watchers: item.watchers_count,
-//           updated: item.updated_at
-//         }
-// });
-
-// // $('.repoName').text(nameRepo[0] + starRepo[0]);
-// //
-// // var compiled = _.template("<=% item.name %>");
-// // $('repoName').text(compiled)
-//
-// // var compiled = _.template("<%= nameRepo %>", "<%= starRepo %>")
-// // $('.repoName').text(compiled);
-// //
-// var compiled = _.each(nameRepo, function(item){
-//   $('.repoName').text(item.name)
-// });
-
-    // $('.repoName').text(filteredRepos.item.name)
-//
-
-
-//
-// var next = filteredRepos.forEach(function(item){
-//   return item
-// });

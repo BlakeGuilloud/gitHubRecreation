@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>GitHub Recreation</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
   <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
       <nav class = "topNav">
         <div class="navWrap">
         <ul id="leftNav">
-          <li><span class="octicon octicon-mark-github"></span></li>
+          <li><span class="mega-octicon octicon-mark-github"></span></li>
           <li class = "input"><input type="" placeholder="Search GitHub"></li>
-          <li>Pull Requests</li>
-          <li>Issues</li>
-          <li>Gist</li>
+          <li class = "three">Pull Requests</li>
+          <li class = "three">Issues</li>
+          <li class = "three">Gist</li>
         </ul>
         <ul id="rightNav">
-          <li class="profilePic" id = "thumbnail"></li>
-          <li><span class="octicon octicon-plus"></span><span class="octicon octicon-chevron-down"></span></li>
+          <span class="octicon octicon-chevron-down"></span><li class="profilePic" id = "thumbnail"></li>
+          <span class="octicon octicon-chevron-down"></span><li><span class="octicon octicon-plus"></span></li>
           <li><span class="octicon octicon-bell"></span></li>
         </ul>
         </div>
@@ -31,38 +31,41 @@
       <div class="profilePic"></div>
       <div class="name"></div>
       <div class="username"></div>
-      <ul>
+      <ul class = "info">
         <li class = "location"></li>
         <li class = "email"></li>
         <li class = "joinDate"></li>
       </ul>
-      <ul>
-        <li class = "followers"></li>
-        <li class = "starred"></li>
-        <li class = "following"></li>
+      <ul class = "disciples">
+        <li class = "followers"><div class="discWord">Followers</div></li>
+        <li class = "starred"><div class="discWord">Followers</div></li>
+        <li class = "following"><div class="discWord">Followers</div></li>
       </ul>
-      <div class="orgs"></div>
+      <div id="orgs">
+        <h3>Organizations</h3>
+        <img src="https://avatars1.githubusercontent.com/u/14251473?v=3&s=84" alt="">
+      </div>
     </section>
     <section id="sectionRight">
       <nav id="sectionNav">
-        <ul>
+        <ul id = "specificNav">
           <li class = "contribs"><span class="octicon octicon-diff-added"></span>Contributions</li>
           <li class = "repositories"><span class="octicon octicon-repo" ></span>Repositories</li>
           <li class = "public"><span class="octicon octicon-rss"></span>Public Activity</li>
         </ul>
-        <button><span class="octicon octicon-pencil"></span>Edit Profile</button>
+        <button class = "navButton"><span class="octicon octicon-pencil"></span><span>Edit Profile</span></button>
       </nav>
       <div class="hidden" id="contributions">
-        
+
       </div>
       <div class = "hidden" id="publicActivity">
-        asdfasdf
+
       </div>
       <div id="repos">
         <div id="repoNav">
           <input type="text" placeholder="Find a repository...">
-          <button>Search</button>
-          <ul>
+          <button class ="searchRepo">Search</button>
+          <ul class = "menuRepo">
             <li><a href=""></a>All</li>
             <li><a href=""></a>Public</li>
             <li><a href=""></a>Private</li>
@@ -70,7 +73,7 @@
             <li><a href=""></a>Forks</li>
             <li><a href=""></a>Mirrors</li>
           </ul>
-          <button><span class="octicon octicon-repo">New</button>
+          <button class = "newRepo"><span class="octicon octicon-repo">New</button>
         </div>
 
         <div id="repoList">
