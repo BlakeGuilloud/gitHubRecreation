@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Recreation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
+</head>
+<body>
+
+    <header>
+      <nav class = "topNav">
+        <div class="navWrap">
+        <ul id="leftNav">
+          <li><span class="octicon octicon-mark-github"></span></li>
+          <li class = "input"><input type="" placeholder="Search GitHub"></li>
+          <li>Pull Requests</li>
+          <li>Issues</li>
+          <li>Gist</li>
+        </ul>
+        <ul id="rightNav">
+          <li class="profilePic" id = "thumbnail"></li>
+          <li><span class="octicon octicon-plus"></span><span class="octicon octicon-chevron-down"></span></li>
+          <li><span class="octicon octicon-bell"></span></li>
+        </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="container">
+    <section id="sectionLeft">
+      <div class="profilePic"></div>
+      <div class="name"></div>
+      <div class="username"></div>
+      <ul>
+        <li class = "location"></li>
+        <li class = "email"></li>
+        <li class = "joinDate"></li>
+      </ul>
+      <ul>
+        <li class = "followers"></li>
+        <li class = "starred"></li>
+        <li class = "following"></li>
+      </ul>
+      <div class="orgs"></div>
+    </section>
+    <section id="sectionRight">
+      <nav id="sectionNav">
+        <ul>
+          <li class = "repositories"><span class="octicon octicon-diff-added"></span><a href="">Contributions</a></li>
+          <li><span class="octicon octicon-repo"></span><a href="">Repositories</a></li>
+          <li><span class="octicon octicon-rss"></span><a href="">Public Activity</a></li>
+        </ul>
+        <button><span class="octicon octicon-pencil"></span>Edit Profile</button>
+      </nav>
+      <div id="repos">
+        <div id="repoNav">
+          <input type="text" placeholder="Find a repository...">
+          <button>Search</button>
+          <ul>
+            <li><a href=""></a>All</li>
+            <li><a href=""></a>Public</li>
+            <li><a href=""></a>Private</li>
+            <li><a href=""></a>Sources</li>
+            <li><a href=""></a>Forks</li>
+            <li><a href=""></a>Mirrors</li>
+          </ul>
+          <button><span class="octicon octicon-repo">New</button>
+        </div>
+        <div id="repoList">
+          <ul class="repoName">
+            <!-- repos go here -->
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+    <footer>
+      <nav id = "botNav">
+        <ul id="footerLeft">
+          <li>c 2015 GitHub, Inc.</li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Security</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Help</a></li>
+        </ul>
+        <span class="octicon octicon-mark-github"></span>
+        <ul id="footerRight">
+          <li><a href="">Status</a></li>
+          <li><a href="">API</a></li>
+          <li><a href="">Training</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Pricing</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+  <script src="bower_components/moment/moment.js" charset="utf-8"></script>
+  <script src="bower_components/underscore/underscore.js" charset="utf-8"></script>
+  <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+  <script src="github.js" charset="utf-8"></script>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+</html>

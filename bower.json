@@ -1,0 +1,25 @@
+{
+  "name": "gitHubRecreation",
+  "version": "0.0.0",
+  "homepage": "https://github.com/BlakeGuilloud/gitHubRecreation",
+  "authors": [
+    "Blake Guilloud <fbguillo@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3",
+    "moment": "~2.10.6",
+    "octicons": "~3.1.0"
+  }
+}

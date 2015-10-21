@@ -1,0 +1,109 @@
+ul {
+  list-style-type: none;
+  padding: 0; }
+
+.topNav {
+  width: 100%;
+  background-color: gray;
+  height: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center; }
+  .topNav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    margin: 0 auto; }
+    .topNav ul li {
+      margin: 5px; }
+  .topNav input {
+    width: 300px; }
+
+.navWrap {
+  display: flex;
+  width: 76%;
+  margin: 0 auto; }
+
+#leftNav {
+  margin: 0; }
+
+#rightNav {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 20%; }
+
+#thumbnail img {
+  width: 26px; }
+
+#container {
+  width: 76%;
+  margin: 0 auto;
+  display: flex; }
+
+#sectionLeft {
+  width: 25%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+  #sectionLeft img {
+    border-radius: 15px; }
+
+#sectionRight {
+  width: 70%;
+  margin: 0 auto; }
+
+#sectionNav {
+  display: flex; }
+  #sectionNav ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-around; }
+  #sectionNav span {
+    padding-right: 5px; }
+  #sectionNav button {
+    display: flex;
+    justify-content: flex-end; }
+
+#repoNav {
+  display: flex; }
+  #repoNav ul {
+    display: flex; }
+    #repoNav ul li {
+      padding: 5px; }
+
+.repoName li {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  align-items: center; }
+
+.repoNameInd {
+  display: flex;
+  flex-direction: column;
+  height: 30px; }
+
+.gazerFork {
+  display: flex;
+  flex-direction: row-reverse; }
+
+.repoTitle {
+  font-size: 20px; }
+  .repoTitle a {
+    text-decoration: none; }
+
+footer {
+  width: 80%;
+  margin: 0 auto; }
+  footer ul {
+    display: flex; }
+  footer li {
+    margin: 5px; }
+
+#botNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+/*# sourceMappingURL=styles.css.map */

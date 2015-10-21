@@ -1,0 +1,144 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+// NAVIGATION
+
+.topNav {
+  width: 100%;
+  background-color: gray;
+  height: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    margin: 0 auto;
+    li{
+      margin: 5px;
+    }
+  }
+  input {
+    width:300px;
+  }
+}
+.navWrap {
+  display: flex;
+  width: 76%;
+  margin: 0 auto;
+}
+#leftNav {
+  margin: 0;
+}
+#rightNav {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+}
+#thumbnail img{
+  width: 26px;
+}
+
+
+//CONTAINER
+#container {
+  width: 76%;
+  margin: 0 auto;
+  display: flex;
+}
+
+
+//SECTION LEFT
+
+#sectionLeft {
+  width: 25%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  img {
+    border-radius: 15px;
+  }
+}
+
+
+//SECTION RIGHT
+
+#sectionRight {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#sectionNav {
+  display: flex;
+
+  ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+  }
+  span {
+    padding-right: 5px;
+  }
+  button {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+
+//REPOS
+
+#repoNav {
+  display: flex;
+  ul{
+    display: flex;
+    li{
+      padding: 5px;
+    }
+  }
+}
+
+.repoName li {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  align-items: center;
+}
+.repoNameInd {
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+}
+.gazerFork {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.repoTitle {
+  font-size: 20px;
+  a{
+  text-decoration: none;
+  }
+}
+
+//FOOTER
+footer {
+  width: 80%;
+  margin: 0 auto;
+  ul{
+    display: flex;
+  }
+  li{
+    margin: 5px;
+  }
+}
+#botNav {
+  display: flex;
+  justify-content: space-around;
+    align-items: center;
+}
