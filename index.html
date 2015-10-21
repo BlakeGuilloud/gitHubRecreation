@@ -46,12 +46,18 @@
     <section id="sectionRight">
       <nav id="sectionNav">
         <ul>
-          <li class = "repositories"><span class="octicon octicon-diff-added"></span><a href="">Contributions</a></li>
-          <li><span class="octicon octicon-repo"></span><a href="">Repositories</a></li>
-          <li><span class="octicon octicon-rss"></span><a href="">Public Activity</a></li>
+          <li class = "contribs"><span class="octicon octicon-diff-added"></span>Contributions</li>
+          <li class = "repositories"><span class="octicon octicon-repo" ></span>Repositories</li>
+          <li class = "public"><span class="octicon octicon-rss"></span>Public Activity</li>
         </ul>
         <button><span class="octicon octicon-pencil"></span>Edit Profile</button>
       </nav>
+      <div class="hidden" id="contributions">
+        
+      </div>
+      <div class = "hidden" id="publicActivity">
+        asdfasdf
+      </div>
       <div id="repos">
         <div id="repoNav">
           <input type="text" placeholder="Find a repository...">
@@ -66,6 +72,7 @@
           </ul>
           <button><span class="octicon octicon-repo">New</button>
         </div>
+
         <div id="repoList">
           <ul class="repoName">
             <!-- repos go here -->

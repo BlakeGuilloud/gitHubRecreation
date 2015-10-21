@@ -2,8 +2,11 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+.hidden {
+  display: none;
+}
 
-// NAVIGATION
+/////////////////// NAVIGATION ////////////////////
 
 .topNav {
   width: 100%;
@@ -46,7 +49,7 @@ ul {
 }
 
 
-//CONTAINER
+///////////////// CONTAINER //////////////////
 #container {
   width: 76%;
   margin: 0 auto;
@@ -54,7 +57,7 @@ ul {
 }
 
 
-//SECTION LEFT
+/////////////// SECTION LEFT ////////////////
 
 #sectionLeft {
   width: 25%;
@@ -62,12 +65,12 @@ ul {
   display: flex;
   flex-direction: column;
   img {
-    border-radius: 15px;
+    border-radius: 7px;
   }
 }
 
 
-//SECTION RIGHT
+///////////////// SECTION RIGHT /////////////////
 
 #sectionRight {
   width: 70%;
@@ -90,9 +93,20 @@ ul {
     justify-content: flex-end;
   }
 }
+///////////////// PUBLIC ACTIVITY ///////////////////
+
+#publicActivity ul {
+  display: flex;
+  li{
+    margin-left: 10px;
+  }
+}
 
 
-//REPOS
+
+
+
+///////////////// REPOS ///////////////////
 
 #repoNav {
   display: flex;
@@ -118,6 +132,9 @@ ul {
 .gazerFork {
   display: flex;
   flex-direction: row-reverse;
+  li {
+    margin: 5px;
+  }
 }
 .repoTitle {
   font-size: 20px;
@@ -126,7 +143,8 @@ ul {
   }
 }
 
-//FOOTER
+///////////// FOOTER ////////////////
+
 footer {
   width: 80%;
   margin: 0 auto;

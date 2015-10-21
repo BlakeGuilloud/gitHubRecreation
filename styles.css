@@ -2,6 +2,9 @@ ul {
   list-style-type: none;
   padding: 0; }
 
+.hidden {
+  display: none; }
+
 .topNav {
   width: 100%;
   background-color: gray;
@@ -48,7 +51,7 @@ ul {
   display: flex;
   flex-direction: column; }
   #sectionLeft img {
-    border-radius: 15px; }
+    border-radius: 7px; }
 
 #sectionRight {
   width: 70%;
@@ -65,6 +68,11 @@ ul {
   #sectionNav button {
     display: flex;
     justify-content: flex-end; }
+
+#publicActivity ul {
+  display: flex; }
+  #publicActivity ul li {
+    margin-left: 10px; }
 
 #repoNav {
   display: flex; }
@@ -87,6 +95,8 @@ ul {
 .gazerFork {
   display: flex;
   flex-direction: row-reverse; }
+  .gazerFork li {
+    margin: 5px; }
 
 .repoTitle {
   font-size: 20px; }
