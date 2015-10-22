@@ -20,7 +20,7 @@ $('.following').append(user.following);
 /////////////////// ON CLICK FUNCTIONS ///////////////////
 $('.public').click(function(){
   $('#publicActivity').show();
-  $('#contributions').hide()
+  $('#contributions').hide();
   $('#repos').hide();
 });
 
@@ -28,13 +28,14 @@ $('.repositories').click(function(){
   $('#publicActivity').hide();
   $('#contributions').hide()
   $('#repos').show();
-})
+  $('.repositories').css('border-bottom-style', 'none');
+});
 
 $('.contribs').click(function(){
   $('#publicActivity').hide();
   $('#repos').hide();
   $('#contributions').show()
-})
+});
 
 
 
@@ -58,6 +59,9 @@ var publicActivity = _.each(events, function(item){
   + "</li></ul>";
 });
 $('#publicActivity').append(filteredActivity)
+
+
+
 
 
 var filteredRepos = "";
@@ -86,7 +90,5 @@ var mainRepo = _.each(repos, function(item){
   + "</ul>"
   + "</div>";
 });
-
-
 
 $('.repoName').append(filteredRepos)

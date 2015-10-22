@@ -175,6 +175,12 @@ ul {
     display: flex;
     width: 50%;
     justify-content: space-around;
+    margin: 0;
+  }
+  li {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 2px 7.3px 0 7.3px;
   }
   span {
     padding-right: 5px;
@@ -332,5 +338,8 @@ footer {
 #botNav {
   display: flex;
   justify-content: space-around;
-    align-items: center;
+  align-items: center;
+  li{
+    font-size: 10px;
+  }
 }

@@ -133,7 +133,12 @@ ul {
   #sectionNav ul {
     display: flex;
     width: 50%;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin: 0; }
+  #sectionNav li {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 2px 7.3px 0 7.3px; }
   #sectionNav span {
     padding-right: 5px; }
 
@@ -253,5 +258,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center; }
+  #botNav li {
+    font-size: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
