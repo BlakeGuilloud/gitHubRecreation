@@ -163,46 +163,49 @@ ul {
 .fullRepo {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #ededed; }
 
-#repoNav {
+.repoName {
+  margin: 0; }
+
+.repoNav {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
-  #repoNav ul {
+  justify-content: space-between;
+  border-bottom: 1px solid #ededed; }
+  .repoNav ul {
     display: flex; }
-    #repoNav ul li {
+    .repoNav ul li {
       padding: 2px; }
-  #repoNav input {
+  .repoNav input {
     margin: 0;
     border: 1px solid lightgray;
     border-radius: 3px;
     height: 24px;
     font-size: 10px;
     width: 200px; }
-  #repoNav button {
+  .repoNav button {
     height: 28px;
     margin: 0;
     background-color: #ededed;
     border: 1px solid lightgray;
     border-radius: 3px;
-    margin-right: 20px;
     font-size: 9px;
     font-weight: bold; }
-  #repoNav .searchRepo {
+  .repoNav .newRepo {
+    background-color: #3fad40;
+    color: white;
+    margin: 0; }
+  .repoNav .searchRepo {
     font-size: 12px; }
-  #repoNav .menuRepo {
-    font-size: 10px; }
-
-.newRepo {
-  background-color: #13ba48;
-  color: white;
-  margin: 0; }
+  .repoNav .menuRepo {
+    font-size: 12px; }
 
 .repoName li {
   display: flex;
   flex-direction: row;
-  font-size: 15px;
   align-items: center; }
 
 .repoNameInd {
@@ -217,13 +220,26 @@ ul {
     margin: 5px; }
 
 .repoTitle {
-  font-size: 20px; }
+  font-size: 20px;
+  margin-bottom: 6px; }
   .repoTitle a {
+    color: #6263e0;
+    font-weight: bold;
     text-decoration: none; }
+
+.timeUpdated {
+  font-size: 10px;
+  color: #7d7a7b; }
 
 .gazerFork {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  color: #7d7a7b;
+  font-size: 10px;
+  font-weight: bold; }
+
+.octicon-star {
+  font-size: 8px; }
 
 footer {
   width: 80%;

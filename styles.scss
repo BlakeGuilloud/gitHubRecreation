@@ -223,11 +223,18 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
+  border-bottom: 1px solid $gitHubGray;
 }
-#repoNav {
+.repoName {
+  margin: 0;
+}
+.repoNav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid $gitHubGray;
+
   ul{
     display: flex;
     li{
@@ -249,28 +256,26 @@ ul {
     background-color: $gitHubGray;
     border: 1px solid lightgray;
     border-radius: 3px;
-    margin-right: 20px;
     font-size: 9px;
     font-weight: bold;
   }
+  .newRepo {
+    background-color: #3fad40;
+    color: white;
+    margin: 0;
+  }
   .searchRepo {
     font-size: 12px;
+
   }
   .menuRepo {
-    font-size: 10px;
+    font-size: 12px;
   }
-}
-
-.newRepo{
-  background-color: #13ba48;
-  color: white;
-  margin: 0;
 }
 
 .repoName li {
   display: flex;
   flex-direction: row;
-  font-size: 15px;
   align-items: center;
 }
 .repoNameInd {
@@ -287,14 +292,27 @@ ul {
 }
 .repoTitle {
   font-size: 20px;
+  margin-bottom: 6px;
   a{
+  color: #6263e0;
+  font-weight: bold;
   text-decoration: none;
   }
+}
+.timeUpdated {
+  font-size: 10px;
+  color: #7d7a7b;
 }
 
 .gazerFork {
   display: flex;
   align-items: center;
+  color: #7d7a7b;
+  font-size: 10px;
+  font-weight: bold;
+}
+.octicon-star {
+  font-size: 8px;
 }
 
 

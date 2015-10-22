@@ -26,6 +26,7 @@ var user = {
 "public_repos": 10,
 "public_gists": 0,
 "followers": 0,
+"starred": 100,
 "following": 4,
 "created_at": "2015-09-21T23:16:48Z",
 "updated_at": "2015-10-07T16:52:19Z"

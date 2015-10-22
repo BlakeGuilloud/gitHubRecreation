@@ -10,7 +10,7 @@ $('.email').append("<span class='octicon octicon-mail'></span>"+ " " + "<a href 
 $('.joinDate').append("<span class='octicon octicon-clock'></span>" + " " + moment(user.created_at).format('MMMM Do YYYY'));
 
 $('.followers').append(user.followers);
-$('.starred').append(user.followers);
+$('.starred').append(user.starred);
 $('.following').append(user.following);
 
 
@@ -69,13 +69,13 @@ var mainRepo = _.each(repos, function(item){
   + "</a></li>"
   + "<li class = 'timeUpdated'>"
   + moment(item.updated_at).fromNow()
-  + "</ul>"
   + "</li>"
+  + "</ul>"
   + "<ul class = 'gazerFork'>"
   + "<li class = 'starGazers'>"
   + item.stargazers_count
-  + "<span class='octicon octicon-git-branch'></span>"
   + "</li>"
+  + "<span class='octicon octicon-git-branch'></span>"
   + "<li class = 'forks'>"
   + item.forks_count
   + "</li>"
